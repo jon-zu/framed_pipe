@@ -1,0 +1,20 @@
+[package]
+name = "framed_pipe"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytes = "1.4.0"
+futures = "0.3.28"
+thiserror = "1.0.47"
+tokio = { version = "1.32.0", features = ["rt", "rt-multi-thread", "macros", "sync"] }
+
+[dev-dependencies]
+test-case = "3.1.0"
+criterion = { version = "0.5", features = ["html_reports", "async_tokio"] }
+
+[[bench]]
+name = "send_recv"
+harness = false
