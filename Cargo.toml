@@ -3,6 +3,8 @@ name = "framed_pipe"
 version = "0.1.0"
 edition = "2021"
 repository = "https://github.com/jon-zu/framed_pipe"
+description = "mpsc based pipe for frames"
+license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
